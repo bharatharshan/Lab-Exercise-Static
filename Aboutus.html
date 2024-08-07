@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    background: whitesmoke; 
+}
+
+.container {
+    background-color: black; 
+    border: 1px solid #ddd;
+    margin: 30px auto;
+    padding: 20px;
+    opacity: 0;
+    animation: slideInFromLeft 1s forwards;
+    transition: all 0.4s ease-in-out 0s;
+    color: goldenrod; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    cursor: pointer; 
+    text-align: center; 
+   
+
+}
+
+.container:hover {
+   
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    padding: 30px;
+}
+
+.navbar {
+    background-color: #000;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-toggler {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000; 
+    display: block; 
+}
+
+.navbar-brand {
+    margin: 0 auto;
+}
+
+.navbar-brand img {
+    height: 68px; 
+    width: auto;  
+}
+
+.navbar-nav .nav-item {
+    margin-left: 15px; 
+}
+
+@keyframes slideInFromLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.mission-statement {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mission-statement .text {
+    flex: 1;
+}
+
+.mission-statement .mission-img {
+    width: 300px; 
+    height: auto;  
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.key-personnel,
+.locations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    padding-left: 70px;
+    margin: 20px;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; 
+    cursor: pointer; 
+    color: black;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.personnel-img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.location-img {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.page-header {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+}
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="Motorcycle dealer shop.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blogsandarticles.html">Blogs And Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="serviceanddepartment.html">Service Department</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactandSupport.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Aboutus.html">About us</a>
+          </li>
+        </ul>
+      </div>
+      <a class="navbar-brand" href="Motorcycle dealer shop.html">
+        <img src="machanatheporaliya.jpeg" alt="Empire Engines">
+      </a>
+    </div>
+  </nav>
+    <header class="page-header">
+        <h1>ABOUT US</h1>
+    </header>
+    <div class="container mission-statement">
+        <div class="text">
+            <h2>MISSION STATEMENT</h2>
+            <p>Our mission is to deliver high-quality products and services that exceed customer expectations.</p>
+        </div>
+        <img src="machanatheporaliya.jpeg" alt="Mission Image" class="mission-img">
+    </div>
+    <div class="container company-history">
+        <h2>COMPANY HISTORY</h2>
+        <p>Founded in 2000, we started as a small startup with a vision to innovate and lead in our industry. Over the years, we have grown significantly, expanding our services and product offerings to meet the changing needs of our customers. Our commitment to quality and customer satisfaction has driven our success and established us as a trusted name in the market. Today, we operate in multiple locations, with a diverse team of professionals dedicated to delivering excellence in everything we do.</p>
+    </div>
+    <div class="container key-personnel">
+        <h2>KEY PERSONNEL</h2>
+        <div class="card">
+            <img src="WhatsApp Image 2024-07-28 at 05.05.36_85c2ea74.jpg" alt="Key Personnel 1" class="personnel-img">
+            <p>BHARAT HARSHAN - CEO</p>
+        </div>
+        <div class="card">
+            <img src="amalmachan.jpg" alt="Key Personnel 2" class="personnel-img">
+            <p>AMAL JYOTHI - CTO</p>
+        </div>
+        <div class="card">
+            <img src="arunmachan.jpg" alt="Key Personnel 3" class="personnel-img">
+            <p>ARUN MP - CFO</p>
+        </div>
+    </div>
+    <div class="container locations">
+        <h2>OUR LOCATIONS</h2>
+        <div class="card">
+            <img src="showroom12.jpg" alt="Location 1" class="location-img">
+            <p>Opp University College, Palayam, Trivandrum, Kerala</p>
+        </div>
+        <div class="card">
+            <img src="showroom2 (1).jpg" alt="Location 2" class="location-img">
+            <p>Opposite Nexus Mall, Hosur Road, Koramangala, Bangalore</p>
+        </div>
+        <div class="card">
+            <img src="showroom3 (1).jpg" alt="Location 3" class="location-img">
+            <p>A-16, M.C.I.E, Mathura Road, New Delhi</p>
+        </div>
+    </div>
+</body>
+</html>

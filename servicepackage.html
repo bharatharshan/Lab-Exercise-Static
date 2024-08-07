@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Packages</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .service-container {
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .service-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            flex: 1 1 calc(25% - 40px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .card p, .card ul {
+            color: #666;
+        }
+
+        .card ul {
+            list-style: disc;
+            padding-left: 20px;
+            text-align: left;
+        }
+
+        .card ul li {
+            margin: 5px 0;
+        }
+
+        .basic-package {
+            background-color: #e3f2fd;
+        }
+
+        .premium-package {
+            background-color: #e8f5e9;
+        }
+
+        .ultimate-package {
+            background-color: #fff3e0;
+        }
+
+        .navbar {
+      background-color: #000;
+      height: 90px; /* Increase navbar height to fit larger image */
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    
+    .navbar-toggler {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1000; /* Ensure the toggle button is always on top */
+      display: block; /* Always display the toggle button */
+    }
+
+    .navbar-brand {
+      margin: 0 auto;
+    }
+
+    .navbar-brand img {
+      height: 68px; /* Increase image height to make it larger */
+      width: auto;  /* Maintain aspect ratio */
+    }
+
+    .navbar-nav .nav-item {
+      margin-left: 15px; /* Space out navbar items */
+    }
+     a{
+      text-decoration: none;
+    }
+    .navbar {
+      background-color: #000;
+      height: 90px; /* Increase navbar height to fit larger image */
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    
+    .navbar-toggler {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1000; /* Ensure the toggle button is always on top */
+      display: block; /* Always display the toggle button */
+    }
+
+    .navbar-brand {
+      margin: 0 auto;
+    }
+
+    .navbar-brand img {
+      height: 68px; /* Increase image height to make it larger */
+      width: auto;  /* Maintain aspect ratio */
+    }
+
+    .navbar-nav .nav-item {
+      margin-left: 15px; /* Space out navbar items */
+    }
+     a{
+      text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+        <!-- Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <!-- Collapsible Content -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="Motorcycle dealer shop.html">Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="blogsandarticles.html">Blogs And Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="serviceanddepartment.html">Service Department</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactandSupport.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Aboutus.html">About us</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Image in the center -->
+      <a class="navbar-brand" href="Motorcycle dealer shop.html">
+        <img src="machanatheporaliya.jpeg" alt="Empire Engines">
+      </a>
+    </div>
+  </nav>
+    <h1>SERVICE PACKAGES OFFERED</h1>
+    <div class="service-container basic-package">
+        <h2>Basic Package</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="maintenaceee.jpg" alt="Basic Package">
+                <p>Basic Package</p>
+            </div>
+            <div class="card">
+                <h3>Services Provided</h3>
+                <ul>
+                    <li>Oil and filter change</li>
+                    <li>Brake inspection</li>
+                    <li>Chain adjustment</li>
+                    <li>Fluid top-offs</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="sachinmachan.jpg" alt="Technician">
+                <p>John Doe</p>
+            </div>
+            <div class="card">
+                <h3>Contact</h3>
+                <p>Phone: 123-456-7890</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-container premium-package">
+        <h2>Premium Package</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="advanced mainta.jpeg" alt="Premium Package">
+                <p>Premium Package</p>
+            </div>
+            <div class="card">
+                <h3>Services Provided</h3>
+                <ul>
+                    <li>All Basic Package services</li>
+                    <li>Tire rotation</li>
+                    <li>Battery check and replacement</li>
+                    <li>Detailed inspection</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="gebinmachan.jpg" alt="Technician">
+                <p>Gebin</p>
+            </div>
+            <div class="card">
+                <h3>Contact</h3>
+                <p>Phone: 987-654-3210</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="service-container ultimate-package">
+        <h2>Ultimate Package</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="regularmaint.jpeg" alt="Ultimate Package">
+                <p>Ultimate Package</p>
+            </div>
+            <div class="card">
+                <h3>Services Provided</h3>
+                <ul>
+                    <li>All Premium Package services</li>
+                    <li>Advanced diagnostics</li>
+                    <li>Engine tuning</li>
+                    <li>Full detailing</li>
+                    <li>Priority service scheduling</li>
+                </ul>
+            </div>
+            <div class="card">
+                <img src="Tojinmachan.jpg" alt="Technician">
+                <p>Tojinmachan</p>
+            </div>
+            <div class="card">
+                <h3>Contact</h3>
+                <p>Phone: 555-123-4567</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

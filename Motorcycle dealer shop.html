@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empire Engines</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .background-wrapper {
+      background-size: cover;
+      background-image: url("yellow-yamaha 123.jpeg");
+      height: 600px;
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .texty-container {
+      background: rgba(32, 30, 30, 0.781);
+      color: white;
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .featured-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .featured-item {
+      height: 100px;
+      width: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 5px;
+      color: white;
+      font-size: 12px;
+      letter-spacing: 1px;
+      padding: 10px;
+      background-color: rgba(8, 7, 2, 0.945);
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .featured-item:hover {
+      background-color: rgb(255, 207, 47);
+    }
+
+    .navbar {
+      background-color: #000;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-brand img {
+      height: 68px;
+      width: auto;
+    }
+
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .footer {
+      background-color: rgb(26, 26, 26);
+      color: white;
+      padding: 5px 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    .footer h5 {
+      margin: 0;
+    }
+
+    .carousel-item .card {
+      margin: 200px auto;
+      max-width: 500px;
+      height: 200px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      background-color: rgb(239, 197, 9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .carousel-item .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .cannot {
+      margin-top: 10px;
+    }
+    
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="Motorcycle dealer shop.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blogsandarticles.html">Blogs And Articles</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="serviceanddepartment.html">Service Department</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ContactandSupport.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Aboutus.html">About us</a>
+          </li>
+        </ul>
+      </div>
+      <a class="navbar-brand" href="Motorcycle dealer shop.html">
+        <img src="machanatheporaliya.jpeg" alt="Empire Engines">
+      </a>
+    </div>
+  </nav>
+
+
+    <div class="content">
+      <div class="background-wrapper" id="background-wrapper">
+        <div class="texty-container">
+          <h2 class="texty">WELCOME TO EMPIRE ENGINES</h2>
+          <p>Discover a world of high-performance motorcycles, top-notch parts, and exceptional service at Empire Engines. Whether you're a seasoned rider or just starting, we have everything you need to fuel your passion for riding.</p>
+        </div>
+       
+        <div id="ridingGearsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a href="featmotorcycles.html"> 
+                <div class="card">
+                  <h3>FEATURED MOTORCYCLES</h3>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="Events and Promotions.html">
+                <div class="card">
+                  <h3>EVENTS AND PROMOTIONS</h3>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="Partsandaccesories234.html">
+                <div class="card">
+                  <h3>PARTS AND ACCESSORIES</h3>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="Demo rides.html">
+                <div class="card">
+                  <h3>DEMO RIDES</h3>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="serviceanddepartment.html">
+                <div class="card">
+                  <h3>SERVICE AND DEPARTMENT</h3>
+                </div>
+              </a>
+            </div>
+            <div class="carousel-item">
+              <a href="wallpaper.html">
+                <div class="card">
+                  <h3>WALLPAPERS</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+          <button class="carousel-control-prev cannot" type="button" data-bs-target="#ridingGearsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next cannot" type="button" data-bs-target="#ridingGearsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+   
+    <footer class="footer">
+      <h5>Empire Engines &copy; 2024</h5>
+    </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parts and Accessories</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: rgb(144, 192, 198);
+        }
+
+        h1, h3 {
+            font-family: 'Arial Black', Gadget, sans-serif;
+            color: #2c3e50;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 3rem;
+        }
+
+        h3 {
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .category {
+            margin-bottom: 50px;
+        }
+
+        .carousel-item .card {
+            margin: 0 auto;
+            max-width: 300px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .carousel-item .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            width: 300px;
+            height: 300px;
+        }
+
+        .modal-dialog {
+            display: flex;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .modal-content {
+            margin: auto;
+        }
+
+        .btn-primary {
+            background-color: #3498db;
+            border-color: #3498db;
+        }
+
+        .btn-primary:hover {
+            background-color: #2980b9;
+            border-color: #2980b9;
+        }
+        
+    .navbar {
+      background-color: #000;
+      height: 90px; 
+      display: flex;
+      align-items: center;
+      
+    }
+    
+   
+    .navbar-brand {
+      margin: 0 auto;
+    }
+
+    .navbar-brand img {
+      height: 68px; 
+      width: auto;  
+    }
+
+    .navbar-nav .nav-item {
+      margin-left: 15px; 
+    }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="Motorcycle dealer shop.html">Home</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="blogsandarticles.html">Blogs And Articles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="serviceanddepartment.html">Service Department</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ContactandSupport.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Aboutus.html">About us</a>
+              </li>
+            </ul>
+          </div>
+    
+          
+          <a class="navbar-brand" href="Motorcycle dealer shop.html">
+            <img src="machanatheporaliya.jpeg" alt="Empire Engines">
+          </a>
+        </div>
+      </nav>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Parts and Accessories</h1>
+        
+        <!-- Riding Gears Section -->
+        <div class="category">
+            <h3>Riding Gears</h3>
+            <div id="ridingGearsCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <img src="Alpine bionic.jpeg" class="card-img-top" alt="Riding Gear 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Alpine Bionic</h5>
+                                <p class="card-text">A high-performance riding gear designed for safety and comfort.</p>
+                                <button class="btn btn-primary view-details" data-toggle="modal" data-target="#productModal" data-title="Alpine Bionic" data-description="A high-performance riding gear designed for safety and comfort.">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="agv_k1_sole.jpg" class="card-img-top" alt="Riding Gear 2">
+                            <div class="card-body">
+                                <h5 class="card-title">AGV-K1</h5>
+                                <p class="card-text">A durable and stylish riding gear offering maximum protection.</p>
+                                <button class="btn btn-primary view-details" data-toggle="modal" data-target="#productModal" data-title="AGV-K1" data-description="A durable and stylish riding gear offering maximum protection.">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="Alpine star SMX.webp" class="card-img-top" alt="Riding Gear 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Alpine Star Gloves</h5>
+                                <p class="card-text">Premium riding gear with advanced safety features</p>
+                                <button class="btn btn-primary view-details" data-toggle="modal" data-target="#productModal" data-title="Alpine Star Gloves" data-description="Premium riding gear with advanced safety features.">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="Dainese Axial D1.jpeg" class="card-img-top" alt="Riding Gear 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Alpine Boots</h5>
+                                <p class="card-text">High-quality riding gear for optimal performance and protection.</p>
+                                <button class="btn btn-primary view-details" data-toggle="modal" data-target="#productModal" data-title="Alpine Boots" data-description="High-quality riding gear for optimal performance and protection.">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="Dainese Jackets.jpeg" class="card-img-top" alt="Riding Gear 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Dainese Jackets</h5>
+                                <p class="card-text">A comfortable and secure riding gear ideal for long rides</p>
+                                <button class="btn btn-primary view-details" data-toggle="modal" data-target="#productModal" data-title="Dainese Jackets" data-description="A comfortable and secure riding gear ideal for long rides.">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#ridingGearsCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#ridingGearsCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Parts and Accessories Section -->
+        <div class="category">
+            <h3>Parts and Accessories</h3>
+            <div id="partsAccessoriesCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <img src="titanium slipon R1.jpeg" class="card-img-top" alt="Part 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Akrapovic Titanium Slipon</h5>
+                                <p class="card-text">A high-performance titanium slip-on exhaust for the R1.</p>
+                                <button class="btn btn-primary view-details" data-toggle="modal" data-target="#productModal" data-title="Akrapovic Titanium Slipon" data-description="A high-performance titanium slip-on exhaust for the R1.">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="SC exhaust slipon Daytona.jpeg" class="card-img-top" alt="Part 2">
+                            <div class="card-body">
+                                <h5 class="card-title">SC Slip-on Exhaust</h5>
+                                <p class="card-text">SC exhaust slip-on for the Daytona with enhanced performance.</p>
+                                <button class="btn btn-primary view-details" data-toggle="modal" data-target="#productModal" data-title="SC Slip-on Exhaust" data-description="SC exhaust slip-on for the Daytona with enhanced performance.">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="Termignoni mv augusta.jpeg" class="card-img-top" alt="Part 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Termignoni Exhaust</h5>
+                                <p class="card-text">Termignoni exhaust for MV Augusta offering premium sound and performance</p>
+                                <button class="btn btn-primary view-details" data-toggle="modal" data-target="#productModal" data-title="Termignoni Exhaust" data-description="Termignoni exhaust for MV Augusta offering premium sound and performance.">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="Darkin Mountbag.jpeg" class="card-img-top" alt="Part 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Darkin Mountbags</h5>
+                                <p class="card-text">Durable mount bag for your motorcycle with ample storage..</p>
+                                <button class="btn btn-primary view-details" data-toggle="modal" data-target="#productModal" data-title="Darkin Mountbags" data-description="Durable mount bag for your motorcycle with ample storage.">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="Akrapovic Racing Gp for R1.jpg" class="card-img-top" alt="Part 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Akrapovic Racing Gp for R1</h5>
+                                <p class="card-text">Full System Exhaust used in Yamaha R1</p>
+                                <button class="btn btn-primary view-details" data-toggle="modal" data-target="#productModal" data-title="Alpine Gloves" data-description="Premium riding gloves from Alpine for enhanced grip and protection.">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev"  href="#partsAccessoriesCarousel" role="button" data-slide="prev">
+                    <span class ="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#partsAccessoriesCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Related Products Section -->
+        <div class="category">
+            <h3>Related Products</h3>
+            <div id="relatedProductsCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <img src="porotmotorstirewarmers.jpeg" class="card-img-top" alt="Related Product 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Porot-motors tire warmers</h5>
+                                <p class="card-text">Tire warmers used for motorcycles</p>
+                                <button class="btn btn-primary view-details" data-toggle="modal" data-target="#productModal" data-title="Paddock Stand" data-description="Stable and durable paddock stand for easy maintenance.">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="Carbon wings Ducati.jpeg" class="card-img-top" alt="Related Product 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Carbon Fibre Ducati Winglets</h5>
+                                <p class="card-text">Carbon Fibre winglets allows High perfomance</p>
+                                <button class="btn btn-primary view-details" data-toggle="modal" data-target="#productModal" data-title="Helmet Rack" data-description="Convenient helmet rack for easy storage and organization.">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="frame slider for daytona.jpg" class="card-img-top" alt="Related Product 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Frame Sliders</h5>
+                                <p class="card-text">Frame Sliders for Triumph Daytona.</p>
+                                <button class="btn btn-primary view-details" data-toggle="modal" data-target="#productModal" data-title="Frame Sliders" data-description="Durable frame sliders for added protection during rides.">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="Dolly Rear Paddock Stand.jpeg" class="card-img-top" alt="Related Product 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Dolly Paddock Stands</h5>
+                                <p class="card-text">Paddock Stands for motorcycles</p>
+                                <button class="btn btn-primary view-details" data-toggle="modal" data-target="#productModal" data-title="Windshields" data-description="Aerodynamic windshields for better riding experience.">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img src="Gopro hero 9.jpeg" class="card-img-top" alt="Related Product 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Go-pro Camera</h5>
+                                <p class="card-text"> Camera Mounted on Helmets.</p>
+                                <button class="btn btn-primary view-details" data-toggle="modal" data-target="#productModal" data-title="Tire Warmers" data-description="Efficient tire warmers for optimal performance in cold conditions.">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#relatedProductsCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#relatedProductsCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="productDescription"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $('#productModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            var title = button.data('title');
+            var description = button.data('description');
+            var modal = $(this);
+            modal.find('.modal-title').text(title);
+            modal.find('.modal-body #productDescription').text(description);
+        });
+    </script>
+</body>
+</html>
